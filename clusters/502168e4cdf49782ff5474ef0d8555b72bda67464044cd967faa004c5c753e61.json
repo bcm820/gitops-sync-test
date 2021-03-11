@@ -1,0 +1,29 @@
+{
+  "checksum": "",
+  "cluster_key": "service-catalog-1",
+  "instances": [
+    {
+      "host": "catalog1",
+      "port": 8080,
+      "metadata": null
+    },
+    {
+      "host": "catalog2",
+      "port": 8080,
+      "metadata": null
+    }
+  ],
+  "name": "service-catalog",
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "zone_key": "zone-1"
+}
