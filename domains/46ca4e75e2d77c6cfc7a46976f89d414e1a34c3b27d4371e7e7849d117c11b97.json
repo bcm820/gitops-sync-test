@@ -1,9 +1,0 @@
-{
-  "checksum": "",
-  "custom_headers": null,
-  "domain_key": "catalog-0",
-  "force_https": false,
-  "name": "*",
-  "port": 8080,
-  "zone_key": "zone-0"
-}
