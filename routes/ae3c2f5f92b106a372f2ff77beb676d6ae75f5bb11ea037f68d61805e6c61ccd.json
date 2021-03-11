@@ -1,0 +1,37 @@
+{
+  "checksum": "",
+  "domain_key": "catalog-1",
+  "path": "/",
+  "prefix_rewrite": "/",
+  "redirects": null,
+  "response_data": {},
+  "retry_policy": null,
+  "route_key": "catalog-1-c",
+  "route_match": {
+    "path": "",
+    "match_type": ""
+  },
+  "rules": [
+    {
+      "rule_key": "",
+      "methods": null,
+      "matches": null,
+      "constraints": {
+        "light": [
+          {
+            "constraint_key": "",
+            "cluster_key": "service-catalog-1",
+            "metadata": null,
+            "properties": null,
+            "response_data": {},
+            "weight": 1
+          }
+        ]
+      },
+      "cohort_seed": null
+    }
+  ],
+  "shared_rules_key": "",
+  "timeout": "",
+  "zone_key": "zone-1"
+}
