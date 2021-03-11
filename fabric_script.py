@@ -21,8 +21,8 @@ for key, val in js.items():
 
     folder = Path(os.path.join(wd, key))
 
-    # if folder.exists():
-    #     shutil.rmtree(folder)
+    if folder.exists():
+        shutil.rmtree(folder)
 
     folder.mkdir(exist_ok=True)
     if key == 'zones':
