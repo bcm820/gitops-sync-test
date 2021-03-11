@@ -46,23 +46,23 @@ sync:
     configuration:
       path: .cache/
 
-  # variable:
-  #   command:
-  #     - greymatter
-  #     - sync
-  #     - plugin
-  #     - store
-  #     - badger
-  #   configuration: {}
+  variable:
+    command:
+      - greymatter
+      - sync
+      - plugin
+      - store
+      - badger
+    configuration: {}
 
-  # secret:
-  #   command:
-  #     - greymatter
-  #     - sync
-  #     - plugin
-  #     - store
-  #     - badger
-  #   configuration: {}
+  secret:
+    command:
+      - greymatter
+      - sync
+      - plugin
+      - store
+      - badger
+    configuration: {}
 
   cipher:
     command:

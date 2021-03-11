@@ -16,13 +16,13 @@
 
 ## Syncing the mesh with your repo
 
-1. Run `greymatter sync plan` - all actions should be UPDATE, since no `./cache` directory has been populated for storing applied config checksums
-2. Run `greymatter sync apply` - this populates the local `./cache` directory with checksums of applied configs
-3. Run `greymatter sync plan` again - all actions should be NOOP since the destination config state (in deployed mesh) matches the source config state (this repo)
+1. Run `greymatter sync plan -c $PWD/.greymatter.yaml` - all actions should be UPDATE, since no `./cache` directory has been populated for storing applied config checksums
+2. Run `greymatter sync apply -c $PWD/.greymatter.yaml` - this populates the local `./cache` directory with checksums of applied configs
+3. Run `greymatter sync plan -c $PWD/.greymatter.yaml` again - all actions should be NOOP since the destination config state (in deployed mesh) matches the source config state (this repo)
 
 ## Applying new configs from repo changes
 
 1. Open `catalog-services/my-mesh-catalog.json` and edit `"max_instances"` to `2`
 2. Commit this change and push to your remote repo
-3. Run `greymatter sync plan` - you should see an UPDATE action for catalog.
-4. Run `greymatter sync apply` - you should see a MODIFY action
+3. Run `greymatter sync plan -c $PWD/.greymatter.yaml` - you should see an UPDATE action for catalog.
+4. Run `greymatter sync apply -c $PWD/.greymatter.yaml` - you should see a MODIFY action
