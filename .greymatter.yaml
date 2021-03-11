@@ -1,0 +1,76 @@
+api:
+  host: localhost:5555
+catalog:
+  host: localhost:8086
+  mesh: my-mesh
+
+sync:
+  source:
+    command:
+      - greymatter
+      - sync
+      - plugin
+      - remote
+      - git
+    configuration:
+      url: ssh://git@github.com/<YOUR-GITHUB-USERNAME>/gitops-sync-test
+      reference: branch:master
+      credentials:
+        privateKey: /<PATH-TO-KEYS>/rsa_private.pem
+      folders:
+        zone: zones
+        proxy: proxies
+        listener: listeners
+        domain: domains
+        route: routes
+        shared_rules: rules
+        cluster: clusters
+        catalog-service: catalog-services
+        catalog-mesh: catalog-meshes
+
+  destination:
+    command:
+      - greymatter
+      - sync
+      - plugin
+      - remote
+      - api
+
+  cache:
+    command:
+      - greymatter
+      - sync
+      - plugin
+      - store
+      - badger
+    configuration:
+      path: .cache/
+
+  # variable:
+  #   command:
+  #     - greymatter
+  #     - sync
+  #     - plugin
+  #     - store
+  #     - badger
+  #   configuration: {}
+
+  # secret:
+  #   command:
+  #     - greymatter
+  #     - sync
+  #     - plugin
+  #     - store
+  #     - badger
+  #   configuration: {}
+
+  cipher:
+    command:
+      - greymatter
+      - sync
+      - plugin
+      - cipher
+      - rsa
+    configuration:
+      privateKey: /<PATH-TO-KEYS>/rsa_private.pem
+      publicKey: /<PATH-TO-KEYS>/rsa_public.pem
