@@ -8,7 +8,7 @@
   "enable_historical_metrics": false,
   "enable_instance_metrics": false,
   "external_links": [],
-  "max_instances": 1,
+  "max_instances": 2,
   "mesh_id": "my-mesh",
   "min_instances": 1,
   "name": "Catalog",

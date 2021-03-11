@@ -22,4 +22,6 @@
 
 ## Applying new configs from repo changes
 
-1. Go to `my-mesh/catalog-services/
+1. Open `catalog-services/my-mesh-catalog.json` and edit `"max_instances"` to `2`
+2. Commit this change and push to your remote repo
+3. Run `greymatter sync plan`.
