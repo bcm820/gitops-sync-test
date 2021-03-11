@@ -12,8 +12,14 @@
 ## Backing up configs to your repo
 
 1. Run `./sync.sh` in this directory to store the config state of the mesh in this directory and push it up to your remote repo
-2. Run `greymatter sync plan` - it should be all UPDATE
-3. Run `greymatter sync apply` - which could fail with 400 error when checksum does not match, but hopefully it will succeed.
-4. Run `greymatter delete route route-edge`
-5.  Run `greymatter sync plan`
-6.  Run `greymatter sync apply`
+2. Inspect the contents of `my-mesh`, `zone-0` and `zone-1`.
+
+## Syncing the mesh with your repo (first time)
+
+1. Run `greymatter sync plan` - all actions should be UPDATE, since no `./cache` directory has been populated for storing applied config checksums
+2. Run `greymatter sync apply` - this populates the local `./cache` directory with checksums of applied configs
+3. Run `greymatter sync plan` again - all actions should be NOOP since the destination config state (in deployed mesh) matches the source config state (this repo)
+
+## Applying new configs from repo changes
+
+1. Go to `my-mesh/catalog-services/
