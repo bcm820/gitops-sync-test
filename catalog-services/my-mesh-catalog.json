@@ -10,7 +10,7 @@
   "external_links": [],
   "max_instances": 2,
   "mesh_id": "my-mesh",
-  "min_instances": 1,
+  "min_instances": 2,
   "name": "Catalog",
   "owner": "",
   "owner_url": "",

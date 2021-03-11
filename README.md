@@ -14,7 +14,7 @@
 1. Run `./sync.sh` in this directory to store the config state of the mesh in this directory and push it up to your remote repo
 2. Inspect the contents of `my-mesh`, `zone-0` and `zone-1`.
 
-## Syncing the mesh with your repo (first time)
+## Syncing the mesh with your repo
 
 1. Run `greymatter sync plan` - all actions should be UPDATE, since no `./cache` directory has been populated for storing applied config checksums
 2. Run `greymatter sync apply` - this populates the local `./cache` directory with checksums of applied configs
@@ -24,4 +24,5 @@
 
 1. Open `catalog-services/my-mesh-catalog.json` and edit `"max_instances"` to `2`
 2. Commit this change and push to your remote repo
-3. Run `greymatter sync plan`.
+3. Run `greymatter sync plan` - you should see an UPDATE action for catalog.
+4. Run `greymatter sync apply` - you should see a MODIFY action
