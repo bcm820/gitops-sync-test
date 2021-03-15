@@ -6,7 +6,6 @@ export GREYMATTER_CATALOG_MESH=my-mesh
 
 mkdir -p zone-0
 mkdir -p zone-1
-mkdir -p my-mesh
 
 greymatter export-zone zone-0 -c $PWD/.greymatter.yaml | python3 fabric_script.py $PWD/zone-0
 greymatter export-zone zone-1 -c $PWD/.greymatter.yaml | python3 fabric_script.py $PWD/zone-1

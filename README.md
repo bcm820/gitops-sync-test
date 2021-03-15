@@ -12,7 +12,7 @@
 ## Backing up configs to your repo
 
 1. Run `./sync.sh` in this directory to store the config state of the mesh in this directory and push it up to your remote repo
-2. Inspect the contents of `my-mesh`, `zone-0` and `zone-1`.
+2. Inspect the contents of `catalog-meshes`, `catalog-services`, `zone-0` and `zone-1`.
 
 ## Syncing the mesh with your repo
 
