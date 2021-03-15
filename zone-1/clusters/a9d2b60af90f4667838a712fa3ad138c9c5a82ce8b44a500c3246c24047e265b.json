@@ -1,0 +1,24 @@
+{
+  "checksum": "",
+  "cluster_key": "control-api-1",
+  "instances": [
+    {
+      "host": "control-api-proxy1",
+      "port": 8080,
+      "metadata": null
+    }
+  ],
+  "name": "control-api",
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "zone_key": "zone-1"
+}

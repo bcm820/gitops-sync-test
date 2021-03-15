@@ -1,0 +1,24 @@
+{
+  "checksum": "",
+  "cluster_key": "catalog-0",
+  "instances": [
+    {
+      "host": "catalog-proxy0",
+      "port": 8080,
+      "metadata": null
+    }
+  ],
+  "name": "catalog",
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "zone_key": "zone-0"
+}

@@ -1,0 +1,24 @@
+{
+  "checksum": "",
+  "cluster_key": "edge-0",
+  "instances": [
+    {
+      "host": "edge0",
+      "port": 8080,
+      "metadata": null
+    }
+  ],
+  "name": "edge",
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "zone_key": "zone-0"
+}
