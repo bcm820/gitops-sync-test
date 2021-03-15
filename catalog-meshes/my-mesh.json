@@ -1,0 +1,19 @@
+{
+  "mesh_id": "my-mesh",
+  "mesh_type": "greymatter",
+  "name": "",
+  "sessions": {
+    "session-0": {
+      "url": "control0:50000",
+      "cluster": "edge",
+      "zone": "zone-0"
+    },
+    "session-1": {
+      "url": "control1:50001",
+      "cluster": "edge",
+      "zone": "zone-1"
+    }
+  },
+  "labels": {},
+  "external_links": []
+}

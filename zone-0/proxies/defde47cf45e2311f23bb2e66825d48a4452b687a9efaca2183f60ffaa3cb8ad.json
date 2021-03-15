@@ -1,0 +1,16 @@
+{
+  "active_proxy_filters": null,
+  "checksum": "",
+  "domain_keys": [
+    "edge-0"
+  ],
+  "listener_keys": [
+    "edge-0"
+  ],
+  "listeners": null,
+  "name": "edge",
+  "proxy_filters": null,
+  "proxy_key": "edge-0",
+  "upgrades": "",
+  "zone_key": "zone-0"
+}

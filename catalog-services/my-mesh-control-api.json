@@ -1,0 +1,21 @@
+{
+  "api_endpoint": "",
+  "api_spec_endpoint": "",
+  "business_impact": "low",
+  "capability": "",
+  "description": "",
+  "documentation": "",
+  "enable_historical_metrics": false,
+  "enable_instance_metrics": false,
+  "external_links": [],
+  "max_instances": 2,
+  "mesh_id": "my-mesh",
+  "min_instances": 2,
+  "name": "Control API",
+  "owner": "",
+  "owner_url": "",
+  "prometheus_job": "control-api",
+  "runtime": "GO",
+  "service_id": "control-api",
+  "version": ""
+}

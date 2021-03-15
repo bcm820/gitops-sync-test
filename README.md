@@ -4,7 +4,7 @@
 
 1. Fork this repo and clone it to your machine.
 2. In the [cli repo](https://github.com/greymatter-io/cli), checkout the branch `catalog-v2` and run `make install` to build a binary and install it to your `$GOPATH/bin` directory.
-3. In the [gm-catalog repo](https://github.com/greymatter-io/gm-catalog), checkout the branch `feat/istio` and run `make docker`. Go to `/docs/test/redis` and follow the `README.md` until you are able to create mesh and service entries.
+3. In the [gm-catalog repo](https://github.com/greymatter-io/gm-catalog), checkout the branch `feat/istio` and run `make docker.feat`. Go to `/docs/test/redis` and follow the `README.md` until you are able to create mesh and service entries.
 4. Configure the included `.greymatter.yaml` config example with the following:
    1. `sync.configuration.url` should point to the forked repo
    2. `sync.credentials.privateKey`, `cipher.confiugration.privateKey`, and `cipher.configuration.publicKey` should point to generated keys for [connecting to Github with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
